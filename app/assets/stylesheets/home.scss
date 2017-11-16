@@ -1,21 +1,28 @@
-html h1,
+h1,
 h2,
 h3,
 h4,
 h5,
 p {
     font-family: "nyt-cheltenham-sh", georgia, "times new roman", times, serif;
+    // display: none;
 }
 body {
-  background-color: blue;
+  margin: 0;
+}
+
+.background {
+  background:linear-gradient(0deg,rgba(60, 121, 187, 0.6),rgba(60, 121, 187, 0.6)),url('https://checkr.com/wp-content/uploads/2015/10/checkr_header_industries-1-1200x320.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+    // background:url(https://checkr.com/wp-content/uploads/2015/10/checkr_header_industries-1.jpg);
 }
 header {
-    background-color: blue;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     width: 100%;
     height: 130px;
-    position: absolute;
+    // position: absolute;
 }
 .div-column {
   margin-top: 14px;
@@ -32,27 +39,148 @@ header {
   text-decoration: none;
 }
 .navbar {
-  background-color: blue;
+  height: 120px;
   display: flex;
-  justify-content: flex-start;
+
 }
 .navbar-logo {
   color: white;
+  //TODO logo a dl: url("../img/logo.svg") 50% 50%/cover no-repeat;
 }
+
 .menu-nav {
-  width: 388px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.menu-nav-list {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+}
+.menu-nav2 {
+  flex: 1;
   display: flex;
   justify-content: flex-end;
-  text-decoration-style: none;
+  align-items: center;
+
 }
 .menu-nav a {
   margin-left: 10px;
   color: white;
   text-decoration: none;
 }
-.articles-haut {
-    margin-top: 48px;
-    margin-left: 2%;
-    width: 98%;
-    height: 85px;
+
+.menu-nav2 a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+.space {
+  flex: 4;
+}
+.menu-nav ul a {
+  // display: inline-flex;
+  // align-items: center;
+  // align-content: center;
+  // transition: none;
+  // letter-spacing: 1px;
+  // font-weight: 600;
+  // font-size: 1.4rem;
+}
+// ##############
+// dropdown
+// ##############
+
+.dropdownword {
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+
+// ##############
+// hover
+// ##############
+p:hover, h1:hover, a:hover {
+    opacity: 0.5;
+}
+
+// ##############
+// main
+// ##############
+
+main {
+  width: 100%;
+}
+article {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+
+.article {
+  z-index: 1000;
+  opacity: 1;
+  width: 50%;
+  height: 634;
+}
+
+.article1 {
+  width: 504;
+  heigth: 296;
+  color: #D0E2EB;
+  line-height: 1.555555556;
+  font-family: "proxima-nova",sans-serif !important;font-weight: 500;
+}
+.titre-article {
+  width: 526;
+  heigth: 88;
+}
+.text-article {
+}
+
+// ##############
+// main
+// ##############
+
+hr {
+  width: 100%;
+  heigth: 2px;
+  color: black;
+}
+section {
+  margin: 0;
+  top: 0;
+  height : 10000px;
+  background-color: white;
 }
